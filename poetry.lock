@@ -129,21 +129,21 @@ ujson = ["ujson (>=5.7.0)"]
 
 [[package]]
 name = "cdk-nag"
-version = "2.28.163"
+version = "2.28.193"
 description = "Check CDK v2 applications for best practices using a combination on available rule packs."
 optional = false
 python-versions = "~=3.8"
 files = [
-    {file = "cdk-nag-2.28.163.tar.gz", hash = "sha256:1f3ab82f1b53cbc8af534c931585737fcdca615e739a4b45fc420e947556976d"},
-    {file = "cdk_nag-2.28.163-py3-none-any.whl", hash = "sha256:59111091a626d86ba764a0e0b997afe75bbadfdb71f5f22a38da46b38904269b"},
+    {file = "cdk_nag-2.28.193-py3-none-any.whl", hash = "sha256:b3cdb368befc492c90fe79cab643a6e54b0918fe6ca4ff5b4b70928a37aace3e"},
+    {file = "cdk_nag-2.28.193.tar.gz", hash = "sha256:e0593c9d0085c736af0e7ab5a3f52e1f0639f9bf306106479847381a35b62b63"},
 ]
 
 [package.dependencies]
 aws-cdk-lib = ">=2.116.0,<3.0.0"
 constructs = ">=10.0.5,<11.0.0"
-jsii = ">=1.101.0,<2.0.0"
+jsii = ">=1.103.0,<2.0.0"
 publication = ">=0.0.3"
-typeguard = ">=2.13.3,<2.14.0"
+typeguard = ">=2.13.3,<5.0.0"
 
 [[package]]
 name = "cfgv"
@@ -477,22 +477,22 @@ files = [
 
 [[package]]
 name = "jsii"
-version = "1.101.0"
+version = "1.103.0"
 description = "Python client for jsii runtime"
 optional = false
 python-versions = "~=3.8"
 files = [
-    {file = "jsii-1.101.0-py3-none-any.whl", hash = "sha256:b78b87f8316560040ad0b9dca1682d73b6532a33acf4ecf56185d1ae5edb54fa"},
-    {file = "jsii-1.101.0.tar.gz", hash = "sha256:043c4d3d0d09af3c7265747f4da9c95770232477f75c846640df4c63d01b19cb"},
+    {file = "jsii-1.103.0-py3-none-any.whl", hash = "sha256:7d9691757d8a072c67ab0fa7e315e8dfa0d9022fa82c7197f0cd00f549b7f864"},
+    {file = "jsii-1.103.0.tar.gz", hash = "sha256:0cd33c1e92ffb2c4ef0fb313e0e9dc7a085c5a8c5698d01310153fafff96c198"},
 ]
 
 [package.dependencies]
-attrs = ">=21.2,<24.0"
+attrs = ">=21.2,<25.0"
 cattrs = ">=1.8,<23.3"
 importlib-resources = ">=5.2.0"
 publication = ">=0.0.3"
 python-dateutil = "*"
-typeguard = ">=2.13.3,<2.14.0"
+typeguard = ">=2.13.3,<5.0.0"
 typing-extensions = ">=3.8,<5.0"
 
 [[package]]
@@ -891,4 +891,4 @@ test = ["covdefaults (>=2.3)", "coverage (>=7.2.7)", "coverage-enable-subprocess
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10,<3.11"
-content-hash = "699bd0eb6eac84b8fb1ed46e825a0e8d499a8ea1f71807d93b9a47d98f97874d"
+content-hash = "62d88c1464029facf82b5f2b46dbe084a016dd6be0f08e00208e2af0c6dc4536"
