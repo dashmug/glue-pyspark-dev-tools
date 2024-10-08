@@ -13,7 +13,7 @@ jobs:
     name: Python
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4.1.7
+      - uses: actions/checkout@v4.2.1
       - name: Install Poetry Action
         uses: snok/install-poetry@v1.3.4
       - name: Set up Python 3.10
@@ -45,7 +45,7 @@ jobs:
     name: Run tests in Glue container
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4.1.7
+      - uses: actions/checkout@v4.2.1
       - name: Pull official glue image
         run: docker pull amazon/aws-glue-libs:glue_libs_4.0.0_image_01
       - name: Build container
@@ -56,14 +56,14 @@ jobs:
     name: Shell
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4.1.7
+      - uses: actions/checkout@v4.2.1
       - name: Check shell scripts using shellcheck
         uses: ludeeus/action-shellcheck@2.0.0
   dockerfile:
     name: Dockerfile
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4.1.7
+      - uses: actions/checkout@v4.2.1
       - name: Validate Dockerfile using hadolint
         uses: hadolint/hadolint-action@v3.1.0
         with:
@@ -72,6 +72,6 @@ jobs:
     name: Makefile
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4.1.7
+      - uses: actions/checkout@v4.2.1
       - name: Check Makefile using checkmake
         uses: Uno-Takashi/checkmake-action@v2
